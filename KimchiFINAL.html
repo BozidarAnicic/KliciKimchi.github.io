@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kliči, Kimchi! Korean Pop-Up</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    background: linear-gradient(135deg, #ff6f3c, #ff4e50);
+    color: #fff;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem;
+    animation: fadeIn 1.5s ease 0.3s backwards;
+}
+p, dd {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 0.5rem auto;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease 0.5s backwards;
+}
+h3 {
+    font-size: 1.4rem;
+    margin: 0.8rem 0 0.3rem;
+    color: #ffe27a;
+    animation: fadeIn 1.5s ease 0.7s backwards;
+}
+.hero-img {
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    margin: 1rem auto;
+    animation: popIn 1.2s ease;
+}
+iframe {
+    border: none;
+    width: 90%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 16px;
+    margin: 1rem auto;
+    display: block;
+    animation: fadeIn 1.5s ease 1s backwards;
+}
+dl {
+    text-align: left;
+    max-width: 500px;
+    margin: 1rem auto;
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    backdrop-filter: blur(4px);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+.button {
+    background: #ffe27a;
+    color: #ff4e50;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    animation: fadeIn 1.5s ease 1.2s backwards;
+}
+.button:hover {
+    transform: scale(1.05);
+    background: #fff3a2;
+}
+</style>
+</head>
+<body>
+<h1><b>KLIČI, KIMCHI!</b></h1>
+<h2>A Korean Food Pop-Up</h2>
+<p>📍 <strong>Craft Beer Garden #imaimoze, Mostar</strong></p>
+<p>📆 July 18-19 | 🕖 18:00 - 21:00</p>
+<p>🥬🌶️ Join us for a playful and tasty exploration of Korea’s favorite flavor with free kimchi tasting and a delicious lineup of kimchi-inspired dishes:</p>
+<dl>
+    <dt><h3>Fresh Kimchi Tasting</h3></dt>
+    <dd>- Complimentary sample served with selected bar items like charcuterie boards.</dd>
+    <dt><h3>Korean Traditional Mini Kimchi Pancakes</h3></dt>
+    <dd>- Savory, golden pan-fried bites made with kimchi batter.</dd>
+    <dt><h3>Kimchi Quesadilla</h3></dt>
+    <dd>- Crispy tortilla filled with melted cheese and sautéed kimchi for a fusion twist.</dd>
+    <dt><h3>Kimchi Fries</h3></dt>
+    <dd>- Crispy fries topped with kimchi, spicy mayo, and fresh herbs.</dd>
+</dl>
+<p>🍻 Perfectly paired with local craft beers, discover a new favorite flavor this summer!</p>
+<img src="C:\Users\bozoa\Desktop\KliciKimchi\pickim.png" alt="Photo of Kimchi Dish" class="hero-img">
+
+<p>What is Kimchi? Kimchi (김치) is a traditional Korean fermented vegetable dish,
+     usually made with napa cabbage and Korean radishes, seasoned with chili pepper, garlic, ginger, and salted seafood. It’s a staple in Korean cuisine, known for its tangy, spicy flavor and probiotic health benefits. Kimchi is served as a side dish with almost every Korean meal and can also be used in cooking to add depth and spice.</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.8285642594084!2d17.809795476589544!3d43.33653027112606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b43053401bcb1%3A0x61d41c8ceccec44d!2sCraft%20Beer%20Garden%20imaimoze!5e0!3m2!1sen!2sba!4v1720262750000!5m2!1sen!2sba" allowfullscreen loading="lazy"></iframe>
+<button class="button" onclick="window.open('https://www.google.com/maps/place/craft+beer+garden/data=!4m2!3m1!1s0x134b43053401bcb1:0x61d41c8ceccec44d?sa=X&ved=1t:242&ictx=111','_blank')">📍 Open in Google Maps</button>
+<script>
+document.querySelectorAll('h3').forEach(h3 => {
+    h3.addEventListener('mouseenter', () => {
+        h3.style.color = '#fff3a2';
+    });
+    h3.addEventListener('mouseleave', () => {
+        h3.style.color = '#ffe27a';
+    });
+});
+</script>
+</body>
+</html>
